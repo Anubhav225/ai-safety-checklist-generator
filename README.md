@@ -1,6 +1,6 @@
 # 🛡️ AI Safety Checklist Generator
 
-AI-powered safety analysis using **Groq** (free API) + **LLaMA 3.3 70B**.
+AI-powered safety analysis using **Groq**
 
 ## Setup
 
