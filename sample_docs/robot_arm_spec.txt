@@ -1,0 +1,115 @@
+TECHNICAL SPECIFICATION: 6-AXIS INDUSTRIAL ROBOT ARM SYSTEM
+Version: 2.1 | Date: 2024-01
+Prepared by: Engineering Department
+
+═══════════════════════════════════════════════
+1. PROJECT OVERVIEW
+═══════════════════════════════════════════════
+This document describes the technical specification for a 6-axis industrial robot arm 
+system to be installed in the automotive assembly plant, Building 7, Line 3. The robot 
+will perform welding, part pick-and-place, and quality inspection tasks in a semi-automated 
+collaborative manufacturing cell.
+
+═══════════════════════════════════════════════
+2. SYSTEM SPECIFICATIONS
+═══════════════════════════════════════════════
+Mechanical:
+- Axes: 6 degrees of freedom
+- Payload capacity: 150 kg (including end-effector)
+- Maximum reach: 2,800 mm
+- Repeatability: ±0.05 mm
+- Maximum joint speed: 180°/sec
+- End-effector: Quick-change tooling plate + welding torch + vision system
+
+Power:
+- Supply voltage: 480V AC, 3-phase, 60 Hz
+- Control cabinet power: 120V AC, single-phase
+- Peak power consumption: 22 kW
+- Operating current: 28 A (RMS)
+- Control voltage: 24V DC (safety-rated)
+
+Control System:
+- PLC: Safety-rated (SIL 2 capable)
+- Servo drives: 6x integrated servo amplifiers
+- Safety controller: Dedicated safety module
+- HMI: 15" touchscreen pendant
+- Communication: EtherNet/IP, Profinet
+- Programming: ISO 9283 compliant
+
+═══════════════════════════════════════════════
+3. INSTALLATION ENVIRONMENT
+═══════════════════════════════════════════════
+- Location: Indoor manufacturing floor
+- Ambient temperature: 5°C to 45°C
+- Humidity: 10% to 95% non-condensing
+- Contamination: Metal swarf, weld spatter, cutting fluid mist
+- Noise level: ~85 dB(A) at 1m during operation
+- Floor loading: Robot base: 2,400 kg static load
+- Installation area: 6m x 8m fenced cell
+- Operator access: Required for teaching, maintenance, and part loading
+
+═══════════════════════════════════════════════
+4. OPERATIONS
+═══════════════════════════════════════════════
+Automatic Mode:
+- Fully automated 24/7 production cycles
+- Average cycle time: 45 seconds
+- Part throughput: ~80 parts/hour
+- Operating speed: Up to 2.0 m/s TCP speed
+
+Manual/Teaching Mode:
+- Speed limited to 250 mm/s (teach pendant enable switch)
+- Requires operator entry into robot cell
+- 2-person procedure required for speeds above 250 mm/s
+
+Maintenance Mode:
+- Full power isolation required for all maintenance
+- Estimated maintenance frequency: Daily inspection, 500-hour PM
+
+═══════════════════════════════════════════════
+5. KNOWN HAZARDS (PRELIMINARY)
+═══════════════════════════════════════════════
+- High-speed moving arm capable of causing fatal crush injuries
+- 480V electrical supply — arc flash hazard
+- Welding torch: UV radiation, fumes, spatter, fire hazard
+- Heavy component handling during installation/maintenance
+- Pinch points at all 6 joints
+- Possible hydraulic leaks (counterbalance system)
+- Software/control failure causing unexpected movement
+- Operator entry during teach mode
+
+═══════════════════════════════════════════════
+6. EXISTING SAFEGUARDS (PLANNED)
+═══════════════════════════════════════════════
+- Steel perimeter fence (1.8m high) with interlocked access gates
+- Emergency stop buttons at all access points and on teach pendant
+- Safety PLC with redundant safety outputs
+- Teach pendant with 3-position enabling device
+- Weld fume extraction system
+- Warning lights and audible alarm for auto mode
+
+═══════════════════════════════════════════════
+7. APPLICABLE STANDARDS (PRELIMINARY LIST)
+═══════════════════════════════════════════════
+- ISO 10218-1/2: Industrial Robots Safety Requirements
+- ANSI/RIA R15.06: Robot Safety for US Installation
+- IEC 62061: Functional Safety (SIL determination required)
+- ISO 13849-1: Safety-Related Control Systems (PLd target)
+- IEC 60204-1: Electrical Equipment of Machines
+- OSHA 29 CFR 1910.147: Lockout/Tagout
+- NFPA 70E: Arc Flash Safety
+- OSHA 29 CFR 1910.252: Welding Operations
+
+═══════════════════════════════════════════════
+8. OPEN ITEMS / CONCERNS
+═══════════════════════════════════════════════
+1. SIL/PL verification calculations not yet completed
+2. Arc flash incident energy analysis required
+3. Formal ISO 10218 risk assessment not started
+4. Ergonomic assessment for operator loading positions
+5. Emergency stop category (0 vs 1 vs 2) to be confirmed
+6. Welding fume exposure limits to be evaluated
+7. Noise impact assessment required (85 dB area)
+8. Grounding and bonding design for welding system
+
+END OF SPECIFICATION

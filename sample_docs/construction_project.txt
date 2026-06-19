@@ -1,0 +1,70 @@
+CONSTRUCTION PROJECT SAFETY BRIEF
+Project: Riverside Mixed-Use Development — Tower A
+Location: Downtown, River District
+Height: 28 floors | 110 meters
+Construction Type: Cast-in-place concrete + structural steel
+
+PROJECT SCOPE
+==============
+Construction of a 28-story mixed-use tower comprising:
+- Floors B2–B1: Underground parking (240 spaces)
+- Floors 1–4: Retail and commercial space
+- Floors 5–28: Residential apartments (186 units)
+- Rooftop: Mechanical penthouse + green roof terrace
+
+CONSTRUCTION PHASES
+====================
+Phase 1 (Months 1–6): Site preparation, excavation, deep foundations (drilled shafts)
+Phase 2 (Months 7–14): Below-grade concrete structure, waterproofing
+Phase 3 (Months 15–26): Above-grade structure (floors 1–28), concurrent MEP rough-in
+Phase 4 (Months 27–36): Facade, fit-out, commissioning
+
+WORKFORCE & SITE CONDITIONS
+=============================
+- Peak workforce: ~350 workers on site simultaneously
+- Multiple subcontractors: Concrete, steel, MEP, facade, finishing
+- Adjacent structures: Existing 6-story office building (5m clearance)
+- Underground utilities: High-pressure gas main 3m from excavation zone
+- Public pedestrian zone: Active sidewalk on two sides
+- River proximity: Site boundary 15m from riverbank
+
+MAJOR ACTIVITIES & EQUIPMENT
+==============================
+- Deep excavation: 12m below grade, dewatering required
+- Tower cranes: 3x luffing-jib cranes (max hook height 140m)
+- Concrete pours: High-rise pump (up to 110m vertical)
+- Structural steel erection: Floors 1–4 and mechanical levels
+- Facade installation: Unitized curtain wall from swing stage/mast climbers
+- Below-grade waterproofing: Torch-applied membrane (open flame)
+
+IDENTIFIED SITE-SPECIFIC RISKS (PRELIMINARY)
+==============================================
+1. Fall hazards: Open floor edges, stairwell openings, leading edge work
+2. Crane operations: Overlapping crane zones, nearby structures, wind exposure
+3. Excavation: Deep excavation next to gas main and adjacent building
+4. Concrete: High-rise pump failures, form failure, workers above active pours
+5. Steel erection: Connections above, falling objects, working at height
+6. Confined spaces: Underground parking, utility vaults, tank installation
+7. Dewatering: Groundwater management, pump failure, adjacent foundation impacts
+8. Fire: Torch-applied waterproofing, temporary heating, combustible materials
+9. Public safety: Tower crane radius over pedestrian areas
+10. Night work: Planned for concrete pours (noise, visibility, fatigue)
+
+EXISTING SAFETY PROGRAM ELEMENTS
+===================================
+- Site safety manager: 1 FTE (CHST certified)
+- Subcontractor safety orientation: Required, 4-hour program
+- Morning toolbox talks: Daily
+- PPE: Hard hat, high-vis, safety boots mandatory
+- Fall protection: 100% tie-off policy above 6 feet
+- Crane lift plan: Required for all critical lifts
+
+GAPS IDENTIFIED (SELF-ASSESSMENT)
+===================================
+1. Rescue plan for fall arrest activations not documented
+2. Hot work permit system not yet established
+3. No confined space program — needed for dewatering sumps
+4. Crane overlap zone management plan not finalized
+5. Emergency evacuation plan for high-rise in construction not done
+6. Utility strike prevention plan pending survey completion
+7. Public protection plan not approved by city yet

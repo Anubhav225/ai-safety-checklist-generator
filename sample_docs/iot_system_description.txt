@@ -1,0 +1,76 @@
+IoT SMART BUILDING MANAGEMENT SYSTEM — PROJECT DESCRIPTION
+
+Project: ConnectedBuilding Pro v3
+Client: TechCorp Office Complex (12-story, 850 occupants)
+Date: 2024-Q1
+
+SYSTEM OVERVIEW
+================
+We are deploying a comprehensive IoT-based building management system (BMS) integrating 
+HVAC control, access control, fire suppression monitoring, lighting automation, energy 
+metering, and occupancy analytics across a 12-story commercial office building.
+
+COMPONENTS AND ARCHITECTURE
+=============================
+1. Edge Devices (1,200+ nodes):
+   - 400x temperature/humidity sensors (MQTT, 2.4 GHz WiFi)
+   - 150x occupancy sensors (BLE 5.0)
+   - 80x smart electrical meters (Modbus/RS-485)
+   - 60x IP cameras with edge AI processing
+   - 200x smart lighting controllers (Zigbee)
+   - 120x HVAC actuators and VAV controllers
+   - 30x water leak detection sensors
+   - Access control readers: 80 doors (Wiegand + IP)
+
+2. Networking:
+   - Dedicated IoT VLAN (segregated from corporate network)
+   - 10x wireless access points (IoT-only SSID, WPA3)
+   - RS-485 backbone for industrial sensors
+   - Fiber uplink to BMS server room
+
+3. Central Platform:
+   - On-premise BMS server cluster (3 nodes, redundant)
+   - Cloud backup via Azure IoT Hub (encrypted)
+   - Dashboard: Web-based + mobile app
+   - API: REST with JWT authentication
+
+4. Integrations:
+   - Fire alarm panel (BACnet/IP read-only interface)
+   - Elevator control system (Modbus)
+   - EV charging stations (OCPP 1.6)
+   - Weather API for predictive HVAC
+
+SECURITY ARCHITECTURE (CURRENT STATE)
+======================================
+- Device authentication: Self-signed certificates (not CA-signed)
+- Firmware updates: Manual USB updates for most devices
+- Password policy: Vendor default passwords changed on 60% of devices
+- Network: Flat IoT VLAN, no micro-segmentation
+- Logging: Central syslog, 30-day retention
+- Vulnerability scanning: Not yet implemented
+- Incident response plan: In draft
+
+DATA COLLECTED
+===============
+- Occupancy patterns and movement data
+- Individual office temperature preferences
+- Badge access records (who enters which room, when)
+- Video footage (retention: 72 hours)
+- Energy consumption per floor/zone
+
+PHYSICAL SECURITY
+==================
+- Server room: Keycard access + CCTV
+- Network closets: Keyed locks only, no monitoring
+- IoT devices: Physically accessible in ceiling spaces
+
+CONCERNS RAISED BY IT TEAM
+============================
+1. Default credentials still on ~40% of devices
+2. No patch management system for firmware
+3. Fire alarm integration — read-only but on same VLAN
+4. Privacy concerns with occupancy data collection
+5. No MFA for BMS dashboard admin accounts
+6. Power failure scenario — UPS sizing unclear
+7. Data residency requirements for cloud backup not confirmed
+8. Integration with fire system — what if BMS commands conflict?
